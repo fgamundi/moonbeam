@@ -208,6 +208,7 @@ where
 				as_bytes.into()
 			})
 			.collect();
+			
 		let encoded = RelayRuntime::encode_call(AvailableStakeCalls::Nominate(nominated))
 			.as_slice()
 			.into();
